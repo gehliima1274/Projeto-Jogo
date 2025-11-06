@@ -1,4 +1,4 @@
-# --- Pedra, Papel e Tesoura com "IA Gulosa" ---
+# Pedra, Papel e Tesoura com "IA Gulosa" 
 
 # Precisamos do 'random' só para o computador "se virar"
 # nas primeiras rodadas, antes de ter dados sobre você.
@@ -77,15 +77,15 @@ while True:
     print(f"O computador jogou: {computador}\n")
 
     if usuario == computador:
-        print("Foi um empate! 🤝")
+        print("Foi um empate!")
     
     # A lógica de vitória é checar se a jogada do computador está no nosso mapa 'o_que_ganha' como a vencedora da jogada do usuário.
     elif computador == o_que_ganha[usuario]:
-        print("Ah, não... O computador ganhou! 😢")
+        print("Ah, não... O computador ganhou!")
     
     else:
         # Se não foi empate e o computador não ganhou, você ganhou.
-        print("Você ganhou! 🎉 Parabéns!")
+        print("Você ganhou! Parabéns!")
 
     # 5. FIM DO ALGORITMO
     # ATUALIZAR O HISTÓRICO para a próxima rodada.
@@ -94,4 +94,5 @@ while True:
     historico_jogador[usuario] += 1
     
     # Mostra o "cérebro" do computador em ação (opcional, mas legal)
+
     print(f"Placar do seu histórico: {historico_jogador}")
